@@ -1,0 +1,20 @@
+Preivously (interface_sizeDisl_readFile/) dislocation density was approximated with a vorticity function, given by an exponential decay on the distance from each of the twelve disclinations. The vorticity function had dependence on two parameters: B (burgersNumber) given the strenght of the density field, and C (extend) on the exponent, related on how fast the vorticity function decayed from its maximum at the disclination positions. 
+
+In the disclination density approximation, r0 is fixed to match the point-defect analytical results given by Nelson, Bowick and Travesset. It turns out this value also matches where in the previous results, the expected behaviour starts to deviate. In droplet radius units, the core radius in this case is given by r0=0.01.
+HOWEVER, this value restricts the disclination gaussian to basically one meshpoint, leading to numerical inaccurracies. Therefore, increment r0 to 0.04, for core to contain at least 4 lines of NNs meshpoints. 
+
+The previous version also considers a rescaling of the meshpoint coordinates in order to rescale the whole energy calculation and find the stress for different droplet sizes, from a fixed the set of R=1 meshes (with different asphericities). Fix the lattice spacing "a" and keep the droplet size R (as in radius of initial spherical droplet) as a parameter. Furthermore, the scaling for both disclination and dislocation charge densities was revised. The 1/R^2 scaling for the disclination gaussians was already present given its renormalization to fit its integral to the integral of the Gaussian curvature. 
+In the case of the dislocation density, the scaling a/R^3 was set as a prefactor to the vorticity approximation function.
+
+In the next dislocation model, the rescaling on size is kept but the disclination density approximation is changed. Based on different assumptions (check Bit.tex), it can be shown that a screening cloud of dislocations around each necessary disclination could be modelled as a change in the disclination charge.
+PREV: By considering now not 12 individual disclination, but 6 polar pairs, we can show that in the presence of dislocations each pole behaves as has either a higher or a lower effective charge s. The main assumptions can be summarized as: (i) The burger vector density field of the dislocations is a solenoidal field - or in other words, its divergence is zero on the whole surface; (ii) for a disclination pair on the spherical coordinates poles, there is azymuthal symmetry, such that the field only depends on the polar coordinate theta; (iii) for an arbitrary contour centered at a disclination, the integral of the field density over the line is a constant number. For scar line perpendicular to the b-field lines, this translates as having a constant number of scars crossing any arbitrary contour, and scars extending from one pole to the other. 
+NOW: Still take an effective disclination charge from the screening of the dislocations, but take again icosahedral symmetry where all disclinations are screened equally. To balance the topological constrain, and consistent with the appearance of vortices of opposite vorticity in the faces in such an assumed b-field, consider 20 point-like defects at center of the faces of the icosahedron, with positive charge density. 
+
+Therefore, the defect charge for each disclination is still written/read individually, already at the "def.tmp" file level, but now all disclination effective charge having the same sign for the disclination positions. MOREOVER, include 20 new charges at the center of the faces, with opposite qOff. 
+The effective charge is still written on the result "def.dat" file.
+
+The corresponding python RUN files were also modified appropiately and are contained in the Run directory in 
+/data1/Garcia/OilDroplets/Code/interface_sizeDisl_effSFaces_File/Run/
+
+Still TO BE DONE, at August 24th
+
