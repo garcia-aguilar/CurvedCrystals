@@ -1,0 +1,9 @@
+<<< Input Parameters >>>
+MeshFile  ico12.msh
+MeshNumber  12
+DistanceMethod  1
+	1.Circle	2.Dijkstra	3.Exact		5.Euclidean
+DefectFile  def.tmp
+
+ ---- Distance Progress: [ 10 . 9 . 8 . 7 . 6 . 5 . 4 . 3 . 2 . 1 .
+	CPU Time 0:0:0:1
