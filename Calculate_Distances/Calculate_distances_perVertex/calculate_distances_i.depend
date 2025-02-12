@@ -1,0 +1,184 @@
+# depslib dependency file v1.0
+1536667359 source:/data1/Garcia/OilDroplets/Code/Calculate_distances_perVertex/common.cpp
+	"common.h"
+
+1536667359 /data1/Garcia/OilDroplets/Code/Calculate_distances_perVertex/common.h
+	<fstream>
+	<string>
+	"geodesic_algorithm_dijkstra.h"
+	"geodesic_algorithm_subdivision.h"
+	"geodesic_algorithm_exact.h"
+	<time.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1536667359 /data1/Garcia/OilDroplets/Code/Calculate_distances_perVertex/geodesic_algorithm_dijkstra.h
+	"geodesic_algorithm_graph_base.h"
+	"geodesic_mesh_elements.h"
+	<vector>
+	<set>
+	<assert.h>
+
+1536667359 /data1/Garcia/OilDroplets/Code/Calculate_distances_perVertex/geodesic_algorithm_graph_base.h
+	"geodesic_algorithm_base.h"
+	"geodesic_mesh_elements.h"
+	<vector>
+	<set>
+	<assert.h>
+
+1536667359 /data1/Garcia/OilDroplets/Code/Calculate_distances_perVertex/geodesic_algorithm_base.h
+	"geodesic_mesh.h"
+	"geodesic_constants_and_simple_functions.h"
+	<iostream>
+	<ctime>
+
+1536667359 /data1/Garcia/OilDroplets/Code/Calculate_distances_perVertex/geodesic_mesh.h
+	<cstddef>
+	<vector>
+	<cmath>
+	<iostream>
+	<algorithm>
+	<fstream>
+	"geodesic_mesh_elements.h"
+	"geodesic_memory.h"
+	"geodesic_constants_and_simple_functions.h"
+
+1536667359 /data1/Garcia/OilDroplets/Code/Calculate_distances_perVertex/geodesic_mesh_elements.h
+	<assert.h>
+	<cstddef>
+
+1536667359 /data1/Garcia/OilDroplets/Code/Calculate_distances_perVertex/geodesic_memory.h
+	<vector>
+	<assert.h>
+	<math.h>
+	<memory>
+
+1536667359 /data1/Garcia/OilDroplets/Code/Calculate_distances_perVertex/geodesic_constants_and_simple_functions.h
+	<assert.h>
+	<math.h>
+	<limits>
+	<fstream>
+
+1536667359 /data1/Garcia/OilDroplets/Code/Calculate_distances_perVertex/geodesic_algorithm_subdivision.h
+	"geodesic_algorithm_graph_base.h"
+	"geodesic_mesh_elements.h"
+	<vector>
+	<set>
+	<assert.h>
+
+1536667359 /data1/Garcia/OilDroplets/Code/Calculate_distances_perVertex/geodesic_algorithm_exact.h
+	"geodesic_memory.h"
+	"geodesic_algorithm_base.h"
+	"geodesic_algorithm_exact_elements.h"
+	<vector>
+	<cmath>
+	<assert.h>
+	<set>
+	<string.h>
+
+1536667359 /data1/Garcia/OilDroplets/Code/Calculate_distances_perVertex/geodesic_algorithm_exact_elements.h
+	"geodesic_memory.h"
+	"geodesic_mesh_elements.h"
+	<vector>
+	<cmath>
+	<assert.h>
+	<algorithm>
+
+1536848914 source:/data1/Garcia/OilDroplets/Code/Calculate_distances_perVertex/calculate_distances_i.cpp
+	<iostream>
+	<fstream>
+	<string>
+	"geodesic_algorithm_dijkstra.h"
+	"geodesic_algorithm_subdivision.h"
+	"geodesic_algorithm_exact.h"
+	"common.h"
+
+1536667359 source:/data1/Garcia/OilDroplets/Code/Calculate_Distances/Calculate_distances_perVertex/common.cpp
+	"common.h"
+
+1536667359 /data1/Garcia/OilDroplets/Code/Calculate_Distances/Calculate_distances_perVertex/common.h
+	<fstream>
+	<string>
+	"geodesic_algorithm_dijkstra.h"
+	"geodesic_algorithm_subdivision.h"
+	"geodesic_algorithm_exact.h"
+	<time.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1536667359 /data1/Garcia/OilDroplets/Code/Calculate_Distances/Calculate_distances_perVertex/geodesic_algorithm_dijkstra.h
+	"geodesic_algorithm_graph_base.h"
+	"geodesic_mesh_elements.h"
+	<vector>
+	<set>
+	<assert.h>
+
+1536667359 /data1/Garcia/OilDroplets/Code/Calculate_Distances/Calculate_distances_perVertex/geodesic_algorithm_graph_base.h
+	"geodesic_algorithm_base.h"
+	"geodesic_mesh_elements.h"
+	<vector>
+	<set>
+	<assert.h>
+
+1536667359 /data1/Garcia/OilDroplets/Code/Calculate_Distances/Calculate_distances_perVertex/geodesic_algorithm_base.h
+	"geodesic_mesh.h"
+	"geodesic_constants_and_simple_functions.h"
+	<iostream>
+	<ctime>
+
+1536667359 /data1/Garcia/OilDroplets/Code/Calculate_Distances/Calculate_distances_perVertex/geodesic_mesh.h
+	<cstddef>
+	<vector>
+	<cmath>
+	<iostream>
+	<algorithm>
+	<fstream>
+	"geodesic_mesh_elements.h"
+	"geodesic_memory.h"
+	"geodesic_constants_and_simple_functions.h"
+
+1536667359 /data1/Garcia/OilDroplets/Code/Calculate_Distances/Calculate_distances_perVertex/geodesic_mesh_elements.h
+	<assert.h>
+	<cstddef>
+
+1536667359 /data1/Garcia/OilDroplets/Code/Calculate_Distances/Calculate_distances_perVertex/geodesic_memory.h
+	<vector>
+	<assert.h>
+	<math.h>
+	<memory>
+
+1536667359 /data1/Garcia/OilDroplets/Code/Calculate_Distances/Calculate_distances_perVertex/geodesic_constants_and_simple_functions.h
+	<assert.h>
+	<math.h>
+	<limits>
+	<fstream>
+
+1536667359 /data1/Garcia/OilDroplets/Code/Calculate_Distances/Calculate_distances_perVertex/geodesic_algorithm_subdivision.h
+	"geodesic_algorithm_graph_base.h"
+	"geodesic_mesh_elements.h"
+	<vector>
+	<set>
+	<assert.h>
+
+1536667359 /data1/Garcia/OilDroplets/Code/Calculate_Distances/Calculate_distances_perVertex/geodesic_algorithm_exact.h
+	"geodesic_memory.h"
+	"geodesic_algorithm_base.h"
+	"geodesic_algorithm_exact_elements.h"
+	<vector>
+	<cmath>
+	<assert.h>
+	<set>
+	<string.h>
+
+1536667359 /data1/Garcia/OilDroplets/Code/Calculate_Distances/Calculate_distances_perVertex/geodesic_algorithm_exact_elements.h
+	"geodesic_memory.h"
+	"geodesic_mesh_elements.h"
+	<vector>
+	<cmath>
+	<assert.h>
+	<algorithm>
+
