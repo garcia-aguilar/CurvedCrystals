@@ -51,8 +51,23 @@ See https://code.google.com/archive/p/geodesic/ for more information on geodesic
 ## Run numerical integration
 
 #### Input files
+- **inputParameters.txt**: file containing the main parameters that will be read by the C++ integrator
+- Geometry mesh, either .msh or .mshd. Note however that when using a .mshd file, the DistanceMethod in the inputParameters.txt file should be set to 4, because distances between vertices and defects will be read from that file
+  
+#### Output files (see examples in Output_examples/)
+- ou.dat
+- ge.dat
+- hi.dat
+- last.dat
 
-#### Output files
+### Running the integration with the python scrips (**run.py**)
+In order to run the C++ integration with various parameters, rename files and store, there are a couple of python scripts. These could be easily parallelized (*I just didn't*). When running the program with these, the output files in the previous section get renamed with a tag, and some additional input/output files are needed/created:
+
+#### Input files python
+- config.py
+  
+#### Output files python
+-  screen_cat_out.dat
 
 ## Get results:
 Either DataFrame with energy calculations OR read out fields on python on a Shape object
