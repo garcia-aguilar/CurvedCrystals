@@ -61,13 +61,14 @@ See https://code.google.com/archive/p/geodesic/ for more information on geodesic
 - last.dat
 
 ### Running the integration with the python scrips (**run.py**)
-In order to run the C++ integration with various parameters, rename files and store, there are a couple of python scripts. These could be easily parallelized (*I just didn't*). When running the program with these, the output files in the previous section get renamed with a tag, and some additional input/output files are needed/created:
+In order to run the C++ integration with various different parameters on a single call, rename files to include a specific tag and store them, there are a couple of python scripts. Excecuting the file **run.py** runs the integration in the range of parameters given. These could easily be parallelized (*I just didn't*). When running the program with these, output files are renamed tag, and some additional input/output files are needed/created. 
 
 #### Input files python
-- config.py
+- **config.py**: Configuration file for input parameters for the integration
   
 #### Output files python
--  screen_cat_out.dat
+-  **screen_cat_out.dat**
+-  Note also that the output files above (ou, ge, hi, last) get renamed with a tag that can also be adjust in config.py
 
 ## Get results:
 Either DataFrame with energy calculations OR read out fields on python on a Shape object
