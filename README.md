@@ -55,10 +55,10 @@ See https://code.google.com/archive/p/geodesic/ for more information on geodesic
 - Geometry mesh, either .msh or .mshd. Note however that when using a .mshd file, the DistanceMethod in the inputParameters.txt file should be set to 4, because distances between vertices and defects will be read from that file
   
 #### Output files (see examples in Output_examples/)
-- ou.dat
-- ge.dat
-- hi.dat
-- last.dat
+- **ou.dat** -> final output file with relevant quantities to the run as a whole, such as running time, total stretching energy, etc
+- **ge.dat** -> geometric quantities at each time vertex (positions, area, curvatures, etc... *I still need to fetch the column labelings, but they can be read in **geo_obj.py***)
+- **hi.dat** -> tracking file for integration steps. This is more to check the process, the values of the integrated stress fiel
+- **last.dat**  -> Values per vertex of the integrated stress field (named phi). Rows are vertices, columns are: ['x', 'y', 'z', 'phi', 'err2']. 
 
 ### Running the integration with the python scrips (**run.py**)
 In order to run the C++ integration with various different parameters on a single call, rename files to include a specific tag and store them, there are a couple of python scripts. Excecuting the file **run.py** runs the integration in the range of parameters given. These could easily be parallelized (*I just didn't*). When running the program with these, output files are renamed tag, and some additional input/output files are needed/created. 
