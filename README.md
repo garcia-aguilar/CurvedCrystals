@@ -67,8 +67,8 @@ In order to run the C++ integration with various different parameters on a singl
 - **config.py**: Configuration file for input parameters for the integration
   
 #### Output files python
--  **screen_cat_out.dat**
--  Note also that the output files above (ou, ge, hi, last) get renamed with a tag that can also be adjust in config.py
+-  **screen_cat_out.dat**: it mirrors the output display on screen as the integration is taking place (note it can take several minutes). It is created to be able to track progress remotely. 
+-  Also that the output files above (ou, ge, hi, last) get renamed with a tag that can also be adjust in config.py
 
 ## Get results:
 Either DataFrame with energy calculations OR read out fields on python on a Shape object
