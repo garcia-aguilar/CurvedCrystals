@@ -1,0 +1,57 @@
+<<< Input Parameters >>>
+MeshFile  /data1/Garcia/OilDroplets/Calc/Defects/Dislocations/OnFaces/Runs/i5/tri_ico5_3.mshd
+MeshName  tri_ico5_3.mshd
+MeshRadius  1.000
+ScalingFactor  1
+DefectFile  /data1/Garcia/OilDroplets/Calc/Defects/Dislocations/OnFaces/Runs/i5/def_faces.tmp
+DistanceMethod  4
+InitialRadius[10mu]  1
+LatticeConstant[10mu]  5E-05
+CoreRatio  0.04
+CoreRadius  0.04
+DislocationBurger  1600
+DislocationExtend  0
+InitStress    Range  0    0.2
+Seed 17
+N_Steps      D_t   500000     0.005
+Integration  2
+ConvergenceStop  1E-23
+
+<<< Mesh Info >>>
+N_vertices  22380
+N_triangles  44756
+EulerCharacteristic  2
+
+<<< Geometry Info >>>
+N_obtuse  291  (0.650%)
+Area  12.8589
+Volume  4.18632
+CalculatedRadius  0.9998
+N_Molecules = 5.9e+09
+Asphericity  0.00117824
+Height  0.954797
+Max/Min_edge_length  0.03581  0.0163
+CrystalCoordination  6
+N_defects  32
+PairConfigList  [ -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, ]
+DisclinicitySum  2.784E-13		(should be ~0)
+DislocationSum  8.448E-16		(should be ~0)
+
+CPU_Geometry_Time 0:0:0:1
+
+<<< Integration Info >>>
+InitStressCalculated  2.2395551E-17		(should be ~0)
+Total T_run = 2.5E+03
+DT  0.0001196
+Max_DT  0.0001196
+T_run_now  59.8
+
+ --- Progress: [ 10 . 9 . .... ]  o.O 
+ 
+	  >>>>>> Numerical RHS^2 < 1E-23  -> Convergence
+
+<<< Final Variables >>>
+TotalStretch  0.0037163594
+RHS^2  9.084E-24
+CPU_Run_Time 0:0:15:35
+CPU_Total_Time 0:0:15:36
