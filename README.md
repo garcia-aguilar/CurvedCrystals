@@ -6,7 +6,7 @@ Numerical integration of the Poisson equation for the surface stress on a curved
 
 The numerical integrator to find the stress field on the frozen surface, given the pre-defined defects in written in C++. It requires a few input files and results in various output files; these are described below. Python scripts were used to run the integrator for various parameter, and later to read and process the output files. 
 
-Example files are provided for the sharp icosahedron in the PRE, tagged with "ico5". 
+Example files are provided for the *rounded* icosahedron in the PRE, tagged with "ico5". 
 
 ### In general, the steps are:
 1. Create initial frozen geometry, as a discretized triangulated mesh (.msh).
