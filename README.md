@@ -57,11 +57,12 @@ See https://code.google.com/archive/p/geodesic/ for more information on geodesic
 #### Output files (see examples in Output_examples/)
 - **ou.dat** -> final output file with relevant quantities to the run as a whole, such as running time, total stretching energy, etc
 - **ge.dat** -> geometric quantities at each time vertex (positions, area, curvatures, etc... *I still need to fetch the column labelings, but they can be read in **geo_obj.py***)
-- **hi.dat** -> tracking file for integration steps. This is more to check the process, the values of the integrated stress fiel
+- **hi.dat** -> tracking file for integration steps. This is more to check the process by following the values of the integrated stress field (see 5.2.3 write_hi_line in run_field_integration.cpp). Rows are computational time step and columns are: [t, phi_0,phi_V, Sum_i(phi_i\ *A_i), Sum_i(phi_i \* A_i),convergence_measure], where phi_0 is field at vertex 0, phi_V is some other vertex for control. 
 - **last.dat**  -> Values per vertex of the integrated stress field (named phi). Rows are vertices, columns are: ['x', 'y', 'z', 'phi', 'err2']. 
 
 ### Running the integration with the python scrips (**run.py**)
 In order to run the C++ integration with various different parameters on a single call, rename files to include a specific tag and store them, there are a couple of python scripts. Excecuting the file **run.py** runs the integration in the range of parameters given. These could easily be parallelized (*I just didn't*). When running the program with these, output files are renamed tag, and some additional input/output files are needed/created. 
+**Note these were written for python2**, so some translation is needed nowadays probably.
 
 #### Input files python
 - **config.py**: Configuration file for input parameters for the integration
