@@ -1,0 +1,15 @@
+MeshFile         -          ../Geo/tri_ico5_3.mshd
+MeshName         -          tri_ico5_3.mshd
+DefectFile       -          ../Geo/def_faces.tmp
+DistanceMethod   -          4
+(1. Great-circle, 2. Dijkstra, 3. Exact, 4. ReadFromFile, 5. Euclidean)
+DropletRadius	.	MeshRadius	-	1.0	.	1.0
+LatticeConstant	-		5e-05
+CoreRatio       -          0.04
+DislocBurger   .  DislocExtend  -   0.08  .  0.0
+Init_stress  .  Range   -   0.0  .  0.2
+Seed	      -          17
+N_steps      .  time_step   -   500  .  5.00E-03
+Integration      -          2
+(1. Euler, 2. RK-2steps, 3. RK-4steps)
+ConvergenceStop  _	        1.000E-23

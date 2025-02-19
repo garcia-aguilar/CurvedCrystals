@@ -33,8 +33,8 @@ range_dislExtend = [0.0]
 
 
 # Integration parameters
-num_it = 500000
-#num_it = 500        # TST
+#num_it = 500000
+num_it = 500        # TST
 #run_time = 100.		// change to DT***
 time_step = 5E-3
 integration_flag = 2  #(1. Euler, 2. RK-2steps, 3. RK-4steps)
